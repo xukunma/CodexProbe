@@ -9,7 +9,7 @@
       "content": [
         {
           "type": "input_text",
-          "text": "[教学副本替换正文：Codex 的代理行为指令，原文 16979 个字符]"
+          "text": "[Teaching copy: Codex agent behavior instructions omitted; original length: 16979 characters]"
         }
       ]
     },
@@ -20,11 +20,11 @@
       "content": [
         {
           "type": "input_text",
-          "text": "[教学副本替换正文：本机可用 skills 的说明，原文 3102 个字符]"
+          "text": "[Teaching copy: local skills documentation omitted; original length: 3102 characters]"
         },
         {
           "type": "input_text",
-          "text": "[教学副本替换正文：文件与网络权限说明，原文 547 个字符]"
+          "text": "[Teaching copy: filesystem and network permissions omitted; original length: 547 characters]"
         }
       ]
     },
@@ -35,11 +35,11 @@
       "content": [
         {
           "type": "input_text",
-          "text": "[教学副本替换正文：AGENTS.md 的项目/用户约定，原文 1017 个字符]"
+          "text": "[Teaching copy: AGENTS.md project and user instructions omitted; original length: 1017 characters]"
         },
         {
           "type": "input_text",
-          "text": "[教学副本替换正文：当前目录、平台等运行环境，原文 881 个字符]"
+          "text": "[Teaching copy: execution environment details omitted, including working directory and platform; original length: 881 characters]"
         }
       ]
     },

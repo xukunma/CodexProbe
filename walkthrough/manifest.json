@@ -1,12 +1,12 @@
 {
-  "purpose": "一轮真实 Codex 到本机 Qwen 调用的教学副本",
+  "purpose": "Teaching copy of one real Codex call to a local Qwen model",
   "source": "outputs/task7-local-runs-v2/ollama-codex/0eef86df1fed43898417481cf4092e26.jsonl",
   "source_sha256": "f12d2a195d47242dedf4b86fb304cf437941dfe91ab43d9c7947235ca014d578",
   "transformations": [
-    "替换了前三个 input 消息中的长指令/本机信息正文，保留每个消息及内容块的 type、role 与结构",
-    "替换输入/响应标识、prompt_cache_key 与 client_metadata 的值",
-    "保留最终用户任务、全部工具定义、模型实际输出文本和统计值",
-    "教学副本用于阅读；源 JSONL 文件保持原样"
+    "Replaced long instructions and local environment details in the first three input messages, preserving each message and content block's type, role, and structure",
+    "Replaced input and response identifiers, prompt_cache_key, and client_metadata values",
+    "Preserved the final user task, all tool definitions, actual model output text, and statistics",
+    "The teaching copy is for inspection; the source JSONL file is unchanged"
   ],
   "record": {
     "sequence": 1,
@@ -51,5 +51,5 @@
     0,
     51
   ],
-  "scope": "记录器保存了请求/响应正文与所列元数据；该文件未保存完整 HTTP 头部"
+  "scope": "The recorder saved request and response bodies and the listed metadata; this file does not contain complete HTTP headers"
 }

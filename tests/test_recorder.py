@@ -36,7 +36,7 @@ def post(address, data=b"{}", headers=None):
 def test_stream_is_live_and_lossless(tmp_path):
     release = Event()
     first = b"event: response.output_text.delta\ndata: "
-    last = '你好\n\ndata: [DONE]\n\n'.encode()
+    last = 'Hello—world\n\ndata: [DONE]\n\n'.encode()
     raw = b'{"model":"sample", "stream":true}'
     request_bytes = zstd.compress(raw)
     observed = {}
@@ -558,12 +558,13 @@ def test_fragmented_sse_bytes(tmp_path):
 
     sse = (
         'event: response.output_text.delta\n'
-        'data: {"delta":"你好"}\n\n'
+        'data: {"delta":"Hello—world"}\n\n'
         'event: response.completed\n'
         'data: {"type":"response.completed"}\n\n'
     ).encode("utf-8")
 
-    pos = sse.index("你".encode("utf-8"))
+    # Split the three-byte UTF-8 em dash across network chunks.
+    pos = sse.index("—".encode("utf-8"))
     first = sse[:pos + 1]
     remaining = sse[pos + 1:]
 
@@ -826,7 +827,7 @@ def test_shutdown_drains_parallel_streams(tmp_path):
             self.wfile.write(first)
             self.wfile.flush()
 
-            # 等待测试允许继续发送
+            # Wait until the test allows streaming to continue.
             if release.wait(10):
                 self.wfile.write(second)
                 self.wfile.flush()
