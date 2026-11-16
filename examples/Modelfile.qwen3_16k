@@ -1,0 +1,3 @@
+FROM qwen3:8b
+PARSER qwen3
+PARAMETER num_ctx 16384

@@ -1,0 +1,97 @@
+{
+  "success": true,
+  "mode": "proxy",
+  "dependent_test": true,
+  "dependency_ok": true,
+  "codex_exit": 0,
+  "task_ok": true,
+  "tools_ok": true,
+  "final_ok": true,
+  "turn_completed": true,
+  "http_calls": 3,
+  "recording_ok": true,
+  "sequential_rounds_ok": true,
+  "rounds": [
+    {
+      "sequence": 1,
+      "status": 200,
+      "complete": true,
+      "tool_calls_in_response": 1,
+      "tool_outputs_in_request": 0
+    },
+    {
+      "sequence": 2,
+      "status": 200,
+      "complete": true,
+      "tool_calls_in_response": 1,
+      "tool_outputs_in_request": 1
+    },
+    {
+      "sequence": 3,
+      "status": 200,
+      "complete": true,
+      "tool_calls_in_response": 0,
+      "tool_outputs_in_request": 2
+    }
+  ],
+  "experiment": "dependent_tool_calls",
+  "model": "qwen3-codex-16k:8b",
+  "task_prompt": "Use exec_command in two separate sequential calls.\nFirst run exactly: openssl rand -hex 8\nWait for the tool result and read the 16-character hexadecimal value.\nOnly after receiving that result, make the second exec_command call.\nThe second command must print that exact value using printf.\nFor example, if the returned value were abc, use: printf '%s\\n' 'abc'\nReplace the example with the actual value returned by the first command.\nAfter receiving the second result, reply exactly TOOL_OK.\nUse normal sandbox permissions. /no_think",
+  "calls": [
+    {
+      "sequence": 1,
+      "status": 200,
+      "backend": "loopback",
+      "wire_api": "responses",
+      "complete": true,
+      "elapsed_ms": 43427.75,
+      "request_sha256": "f03a4e685f0b04cfbdbed92e5e12c3886c58ef3dd45991d473b8c4f4d8af43d0",
+      "response_sha256": "3f68799aabf284320c58bb6a81215ab6375d1fe02a745b6144e4abe217e90a53",
+      "events": 675,
+      "terminal_event": "response.completed",
+      "sequence_contiguous": true,
+      "deltas_match_terminal": true,
+      "output_types": [
+        "reasoning",
+        "function_call"
+      ]
+    },
+    {
+      "sequence": 2,
+      "status": 200,
+      "backend": "loopback",
+      "wire_api": "responses",
+      "complete": true,
+      "elapsed_ms": 16274.66,
+      "request_sha256": "bbcef233306760521930a688aec95ddc9aca75ea8ca1f1cb0b36c593e44d9985",
+      "response_sha256": "d6fd3cd496a684e30365f1c22bf78206c80955e5a7b2a4dda2bae3dd340db871",
+      "events": 273,
+      "terminal_event": "response.completed",
+      "sequence_contiguous": true,
+      "deltas_match_terminal": true,
+      "output_types": [
+        "reasoning",
+        "function_call"
+      ]
+    },
+    {
+      "sequence": 3,
+      "status": 200,
+      "backend": "loopback",
+      "wire_api": "responses",
+      "complete": true,
+      "elapsed_ms": 11410.09,
+      "request_sha256": "ec7a1586dc978edffb7e9ef93477d42801b1e219dff9d27f5c30485b061e2595",
+      "response_sha256": "2502b126c0e40ee39c0f5cb8f2bb2908f42f14e17378c822a27b76e88eae9c09",
+      "events": 225,
+      "terminal_event": "response.completed",
+      "sequence_contiguous": true,
+      "deltas_match_terminal": true,
+      "output_types": [
+        "reasoning",
+        "message"
+      ]
+    }
+  ],
+  "verification": "archived_session_offline_recheck"
+}

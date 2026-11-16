@@ -1,0 +1,77 @@
+{
+  "experiment": "codex_checkout",
+  "model": "gpt-6.1-sol",
+  "recording_ok": true,
+  "task_ok": true,
+  "tests_unchanged": true,
+  "source_changed": true,
+  "http_error_count": 0,
+  "fixture_sha256": "59a9639c502bb4e0f69c539a9b0d8c76449a78f9c10589170ad300790806bbe2",
+  "suite_sha256": "52061f36fe083d7d1273e3e09ac1d673e7352f8690f4b130856618bfc782bc85",
+  "prompt_sha256": "01c6209cb45f2b453483e7895f6c409f2ca49e45517533fbc6230fedbc91b3d9",
+  "baseline": {
+    "ran": 7,
+    "passed": 4
+  },
+  "after": {
+    "ran": 7,
+    "passed": 7
+  },
+  "calls": [
+    {
+      "sequence": 1,
+      "status": 200,
+      "backend": "openai",
+      "wire_api": "responses",
+      "complete": true,
+      "elapsed_ms": 5531.79,
+      "request_sha256": "d80bf1561d3cbe9296bcb94a9aa92546952b4236cbe3cffc4a31f9ec36ea4fd5",
+      "response_sha256": "3f630596352e565084e0a254cdd175aa24424ce8632f74395130bf26d02e2c58",
+      "events": 148,
+      "terminal_event": "response.completed",
+      "sequence_contiguous": true,
+      "deltas_match_terminal": true,
+      "output_types": [
+        "message",
+        "custom_tool_call"
+      ]
+    },
+    {
+      "sequence": 2,
+      "status": 200,
+      "backend": "openai",
+      "wire_api": "responses",
+      "complete": true,
+      "elapsed_ms": 6792.44,
+      "request_sha256": "f8dd6e6ce321ac745b012de514f8545bc7da376f92d25711387261a8a077cb4b",
+      "response_sha256": "630f12fad23b400f2b20d0a877b54eb54bd8c94ab328819db45e65d1abde03f0",
+      "events": 212,
+      "terminal_event": "response.completed",
+      "sequence_contiguous": true,
+      "deltas_match_terminal": true,
+      "output_types": [
+        "reasoning",
+        "message",
+        "custom_tool_call"
+      ]
+    },
+    {
+      "sequence": 3,
+      "status": 200,
+      "backend": "openai",
+      "wire_api": "responses",
+      "complete": true,
+      "elapsed_ms": 3670.43,
+      "request_sha256": "3102782a7683be72ff34f4cdc96650c60660208bf82e0e0e37e382f430687c3d",
+      "response_sha256": "45895fd3d70a66477fc20ad47cd285a32cb5e34a39d1e831c0445db7fd53cc82",
+      "events": 68,
+      "terminal_event": "response.completed",
+      "sequence_contiguous": true,
+      "deltas_match_terminal": true,
+      "output_types": [
+        "message"
+      ]
+    }
+  ],
+  "verification": "archived_session_offline_regrade"
+}

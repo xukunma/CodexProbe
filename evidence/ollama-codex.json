@@ -1,0 +1,40 @@
+{
+  "experiment": "codex_checkout",
+  "model": "qwen2.5-coder:7b",
+  "recording_ok": true,
+  "task_ok": false,
+  "tests_unchanged": true,
+  "source_changed": false,
+  "http_error_count": 0,
+  "fixture_sha256": "59a9639c502bb4e0f69c539a9b0d8c76449a78f9c10589170ad300790806bbe2",
+  "suite_sha256": "52061f36fe083d7d1273e3e09ac1d673e7352f8690f4b130856618bfc782bc85",
+  "prompt_sha256": "01c6209cb45f2b453483e7895f6c409f2ca49e45517533fbc6230fedbc91b3d9",
+  "baseline": {
+    "ran": 7,
+    "passed": 4
+  },
+  "after": {
+    "ran": 7,
+    "passed": 4
+  },
+  "calls": [
+    {
+      "sequence": 1,
+      "status": 200,
+      "backend": "loopback",
+      "wire_api": "responses",
+      "complete": true,
+      "elapsed_ms": 2813.7,
+      "request_sha256": "afa81ac0fffbfce05a39ad99f010e4003937efd4eb863f75fe5cf9beba3ca9b3",
+      "response_sha256": "583c63375cc057d6bc88a408e83299cbd126f10ce27503f26ac1049e92933fcb",
+      "events": 52,
+      "terminal_event": "response.completed",
+      "sequence_contiguous": true,
+      "deltas_match_terminal": true,
+      "output_types": [
+        "message"
+      ]
+    }
+  ],
+  "verification": "archived_session_offline_regrade"
+}

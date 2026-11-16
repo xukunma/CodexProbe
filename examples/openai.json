@@ -1,0 +1,1 @@
+{"base_url":"https://chatgpt.com/backend-api/codex","wire_api":"responses","forward_auth":true,"listen_host":"127.0.0.1","listen_port":0,"log_dir":"logs","seed":42,"model":"gpt-6.1-sol"}

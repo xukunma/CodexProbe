@@ -1,0 +1,24 @@
+{
+  "experiment": "Qwen3 Real Agent Tool Loop",
+  "model": "qwen3-codex-16k:8b",
+  "mode": "proxy",
+  "codex_exit": 0,
+  "elapsed_seconds": 48.966,
+  "tool_ok": true,
+  "final_answer_ok": true,
+  "turn_completed": true,
+  "recording_ok": true,
+  "http_calls": [
+    {
+      "sequence": 1,
+      "status": 200,
+      "complete": true
+    },
+    {
+      "sequence": 2,
+      "status": 200,
+      "complete": true
+    }
+  ],
+  "success": true
+}

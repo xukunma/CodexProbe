@@ -1,0 +1,67 @@
+{
+  "experiment": "direct_chat_with_source_and_tests",
+  "format": "json",
+  "model": "qwen2.5-coder:7b",
+  "feedback_enabled": true,
+  "attempts": [
+    {
+      "ran": 7,
+      "passed": 4,
+      "exit_code": 1
+    },
+    {
+      "ran": 7,
+      "passed": 4,
+      "exit_code": 1
+    }
+  ],
+  "temperature": 0,
+  "seed": 42,
+  "recording_ok": true,
+  "task_ok": false,
+  "prompt_sha256": "c420e154ec9aabe98a0f4b01a22be028fc6e4bb8f713aec8d9d0866af237d193",
+  "fixture_sha256": "59a9639c502bb4e0f69c539a9b0d8c76449a78f9c10589170ad300790806bbe2",
+  "suite_sha256": "52061f36fe083d7d1273e3e09ac1d673e7352f8690f4b130856618bfc782bc85",
+  "candidate_sha256": "67c649427661c4fa405d58e6b6cdc91ed26bd50495b873b01b361eeabe889404",
+  "baseline": {
+    "ran": 7,
+    "passed": 4
+  },
+  "after": {
+    "ran": 7,
+    "passed": 4
+  },
+  "calls": [
+    {
+      "sequence": 1,
+      "status": 200,
+      "backend": "loopback",
+      "wire_api": "chat_completions",
+      "complete": true,
+      "elapsed_ms": 3392.05,
+      "request_sha256": "94dd8cba8e304e867d19e93dce811826ff457e7fd406b600e6f273bf8d96311b",
+      "response_sha256": "0323b99939d41e43757fab61e2fa2e33e4596f6bd01e5a57cc4ad41585d7ae42",
+      "events": 0,
+      "terminal_event": null,
+      "sequence_contiguous": null,
+      "deltas_match_terminal": null,
+      "output_types": []
+    },
+    {
+      "sequence": 2,
+      "status": 200,
+      "backend": "loopback",
+      "wire_api": "chat_completions",
+      "complete": true,
+      "elapsed_ms": 4920.85,
+      "request_sha256": "e02ec33f73edf8b6662affeebd7e9380c46cbed4d4596a1fcc311d2e1e8113cf",
+      "response_sha256": "5881ca62c00a0ddcde473b3db0d5f8d631226333e8b67c3165bbf54ea23c3bc9",
+      "events": 0,
+      "terminal_event": null,
+      "sequence_contiguous": null,
+      "deltas_match_terminal": null,
+      "output_types": []
+    }
+  ],
+  "verification": "archived_session_offline_regrade"
+}

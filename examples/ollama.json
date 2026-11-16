@@ -1,0 +1,1 @@
+{"base_url":"http://127.0.0.1:11434/v1","wire_api":"responses","listen_host":"127.0.0.1","listen_port":0,"log_dir":"logs","seed":42,"model":"qwen2.5-coder:7b","context_window":32768}

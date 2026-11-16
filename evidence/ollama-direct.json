@@ -1,0 +1,47 @@
+{
+  "experiment": "direct_chat_with_source_and_tests",
+  "model": "qwen2.5-coder:7b",
+  "temperature": 0,
+  "seed": 42,
+  "recording_ok": true,
+  "task_ok": false,
+  "prompt_sha256": "d8607b4431e9093d7a9880b01ac690394726f3345dc890074392669ee0ef2af4",
+  "fixture_sha256": "59a9639c502bb4e0f69c539a9b0d8c76449a78f9c10589170ad300790806bbe2",
+  "suite_sha256": "52061f36fe083d7d1273e3e09ac1d673e7352f8690f4b130856618bfc782bc85",
+  "candidate_sha256": "aab8310311b75209900626289c01032293f99a0c3dc400175f65abb85f77e6bf",
+  "baseline": {
+    "ran": 7,
+    "passed": 4
+  },
+  "after": {
+    "ran": 1,
+    "passed": 0
+  },
+  "calls": [
+    {
+      "sequence": 1,
+      "status": 200,
+      "backend": "loopback",
+      "wire_api": "chat_completions",
+      "complete": true,
+      "elapsed_ms": 16604.21,
+      "request_sha256": "65e0056ca1ecbd1ff75ba3c6f1768d832234ce3ae8b15622fa307e8a6d088100",
+      "response_sha256": "fbe09924e0db0c467312502b1a4ab7ff48f251e282c88a6a8ab9fd6351c338ed",
+      "events": 0,
+      "terminal_event": null,
+      "sequence_contiguous": null,
+      "deltas_match_terminal": null,
+      "output_types": []
+    }
+  ],
+  "format": "plain",
+  "feedback_enabled": false,
+  "attempts": [
+    {
+      "ran": 1,
+      "passed": 0,
+      "exit_code": 1
+    }
+  ],
+  "verification": "archived_session_offline_regrade"
+}

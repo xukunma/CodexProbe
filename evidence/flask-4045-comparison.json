@@ -1,0 +1,329 @@
+{
+  "experiment": "flask_4045_direct_proxy_comparison",
+  "model": "qwen3-codex-16k:8b",
+  "base_commit": "d8c37f43724cd9fb0870f77877b7c4c7e38a19e0",
+  "same_user_prompt": true,
+  "prompt_sha256": "47aa833d615c22cc405e4d24244ac365bd68d991dd82baf717ca4e497f658e2f",
+  "proxy": {
+    "codex_exit": 0,
+    "turn_completed": true,
+    "completed_tool_commands": 13,
+    "source_changed": false,
+    "tests_unchanged": true,
+    "local_issue_checks_passed": false,
+    "issue_checks": {
+      "passed": false,
+      "exit_code": 1,
+      "dotted_names_rejected": {
+        "parent.child": false,
+        ".leading": false,
+        "trailing.": false,
+        "two..dots": false,
+        "myapp.frontend": false,
+        "myapp.backend": false
+      },
+      "ordinary_names_work": true,
+      "nested_blueprints_work": true
+    },
+    "original_blueprint_tests": {
+      "exit_code": 0,
+      "total": 49,
+      "passed": 49,
+      "failures": [],
+      "errors": [],
+      "skipped": []
+    },
+    "recording_ok": true,
+    "http_calls": 14,
+    "generated_and_executed_commands_match": true,
+    "failed_sed_commands": 5,
+    "calls": [
+      {
+        "sequence": 1,
+        "status": 200,
+        "backend": "loopback",
+        "wire_api": "responses",
+        "complete": true,
+        "elapsed_ms": 52397.85,
+        "request_sha256": "314f08480b612d72a3fbf1e83a6b4705a3b4276d1dab42bfcd5e8dfd52029897",
+        "response_sha256": "a3cee75d26a00241c10c29a9c0a03900d93000ece4899c81cab5c9a24d17ac1a",
+        "events": 692,
+        "terminal_event": "response.completed",
+        "sequence_contiguous": true,
+        "deltas_match_terminal": true,
+        "output_types": [
+          "reasoning",
+          "function_call"
+        ]
+      },
+      {
+        "sequence": 2,
+        "status": 200,
+        "backend": "loopback",
+        "wire_api": "responses",
+        "complete": true,
+        "elapsed_ms": 26658.16,
+        "request_sha256": "b54d155e851a730ebd85c79a84f0ef71fb74932d4a788e9e1c2a29c51bc25eb0",
+        "response_sha256": "035beb4d0e8be106c96a8439fc6f42758940113c6b4f7818401eef7300ac7917",
+        "events": 377,
+        "terminal_event": "response.completed",
+        "sequence_contiguous": true,
+        "deltas_match_terminal": true,
+        "output_types": [
+          "reasoning",
+          "function_call"
+        ]
+      },
+      {
+        "sequence": 3,
+        "status": 200,
+        "backend": "loopback",
+        "wire_api": "responses",
+        "complete": true,
+        "elapsed_ms": 25162.07,
+        "request_sha256": "13c9f153ecdd172694059d7974d1c62d39f067cc595ebcf59ef290103487d445",
+        "response_sha256": "9ecd393749ce54281122349e9c5aec47539d3fa48be29e74a0343487b255b335",
+        "events": 356,
+        "terminal_event": "response.completed",
+        "sequence_contiguous": true,
+        "deltas_match_terminal": true,
+        "output_types": [
+          "reasoning",
+          "function_call"
+        ]
+      },
+      {
+        "sequence": 4,
+        "status": 200,
+        "backend": "loopback",
+        "wire_api": "responses",
+        "complete": true,
+        "elapsed_ms": 34443.61,
+        "request_sha256": "5fa27dad7656fd96b10da2c72d815286cd57e06ecfe4ecf48f6bef146ef6bf47",
+        "response_sha256": "afe10da1453d72b5f0eecc1897011d0fe79333b958e46a5c78396f2f00b65b3b",
+        "events": 448,
+        "terminal_event": "response.completed",
+        "sequence_contiguous": true,
+        "deltas_match_terminal": true,
+        "output_types": [
+          "reasoning",
+          "function_call"
+        ]
+      },
+      {
+        "sequence": 5,
+        "status": 200,
+        "backend": "loopback",
+        "wire_api": "responses",
+        "complete": true,
+        "elapsed_ms": 37888.19,
+        "request_sha256": "5f87bd84d000cb2440949e2e28c632a0c1251059c5a0712af0fbdc1eae67d9c5",
+        "response_sha256": "267f77712185012dc586d139b7dfdbf28cf64bb30218e8ae578dcd24f71ba550",
+        "events": 348,
+        "terminal_event": "response.completed",
+        "sequence_contiguous": true,
+        "deltas_match_terminal": true,
+        "output_types": [
+          "reasoning",
+          "function_call"
+        ]
+      },
+      {
+        "sequence": 6,
+        "status": 200,
+        "backend": "loopback",
+        "wire_api": "responses",
+        "complete": true,
+        "elapsed_ms": 37072.61,
+        "request_sha256": "2059930c9e466a45778c3f8f5455abc03d12beb10a97aadf180152d566e69836",
+        "response_sha256": "5dd064a27bb02c0dd1f15fed46596749179a220dad45e34338cd7c1eab218f63",
+        "events": 320,
+        "terminal_event": "response.completed",
+        "sequence_contiguous": true,
+        "deltas_match_terminal": true,
+        "output_types": [
+          "reasoning",
+          "function_call"
+        ]
+      },
+      {
+        "sequence": 7,
+        "status": 200,
+        "backend": "loopback",
+        "wire_api": "responses",
+        "complete": true,
+        "elapsed_ms": 36283.23,
+        "request_sha256": "363048fc69de5bfa59956cbb9574b3658ab6fb22da119afc6934fd23cf91893a",
+        "response_sha256": "6d4648648b991ce6fefd0020b25046d4c5e47da2e22631b182dd11130ab4d958",
+        "events": 283,
+        "terminal_event": "response.completed",
+        "sequence_contiguous": true,
+        "deltas_match_terminal": true,
+        "output_types": [
+          "reasoning",
+          "function_call"
+        ]
+      },
+      {
+        "sequence": 8,
+        "status": 200,
+        "backend": "loopback",
+        "wire_api": "responses",
+        "complete": true,
+        "elapsed_ms": 48136.25,
+        "request_sha256": "b202a156636f51e5177e811aa0a9f3bfca49c04a4985dfd979bd5717cffb8bc5",
+        "response_sha256": "7c28b68146a717001f9592778bfaf3dce3f3d1f8d00b40ff8f24471586548189",
+        "events": 457,
+        "terminal_event": "response.completed",
+        "sequence_contiguous": true,
+        "deltas_match_terminal": true,
+        "output_types": [
+          "reasoning",
+          "function_call"
+        ]
+      },
+      {
+        "sequence": 9,
+        "status": 200,
+        "backend": "loopback",
+        "wire_api": "responses",
+        "complete": true,
+        "elapsed_ms": 34585.68,
+        "request_sha256": "9e4e029f5aaccce3e931cfe2092ee573dee1acba7ed65579b6b99e7ba3c4d7d3",
+        "response_sha256": "0a7e6f0b122305146cadc05fe6edda3b31e592cd9d079c8ec464c15ceea50e7c",
+        "events": 288,
+        "terminal_event": "response.completed",
+        "sequence_contiguous": true,
+        "deltas_match_terminal": true,
+        "output_types": [
+          "reasoning",
+          "function_call"
+        ]
+      },
+      {
+        "sequence": 10,
+        "status": 200,
+        "backend": "loopback",
+        "wire_api": "responses",
+        "complete": true,
+        "elapsed_ms": 37816.48,
+        "request_sha256": "5d9fb93ccad44fe2cadeaeadbd635b403149730b152ecdcaee79f7a6b7fbfb17",
+        "response_sha256": "5ef29946d2484213ada0c2ce2867ed172820d07a90a7bfc7359bdbff8a24d7d1",
+        "events": 309,
+        "terminal_event": "response.completed",
+        "sequence_contiguous": true,
+        "deltas_match_terminal": true,
+        "output_types": [
+          "reasoning",
+          "function_call"
+        ]
+      },
+      {
+        "sequence": 11,
+        "status": 200,
+        "backend": "loopback",
+        "wire_api": "responses",
+        "complete": true,
+        "elapsed_ms": 32062.08,
+        "request_sha256": "65d16913ffdbc03fdb692b3ce14060cea53010587c060addeed1add983153a46",
+        "response_sha256": "26218b354c66ca23e4b0f536fb9aa4ea26b65ea20904335966b727d3f746818e",
+        "events": 283,
+        "terminal_event": "response.completed",
+        "sequence_contiguous": true,
+        "deltas_match_terminal": true,
+        "output_types": [
+          "reasoning",
+          "function_call"
+        ]
+      },
+      {
+        "sequence": 12,
+        "status": 200,
+        "backend": "loopback",
+        "wire_api": "responses",
+        "complete": true,
+        "elapsed_ms": 35590.39,
+        "request_sha256": "1465378bc84a4658e2105ed27d3399dd7312a44ffefd89eee2ef38196e28aef3",
+        "response_sha256": "b1f7cd452b1edb403a12a3ee77bf6f2b1a9928e7802d038178caefa260634747",
+        "events": 297,
+        "terminal_event": "response.completed",
+        "sequence_contiguous": true,
+        "deltas_match_terminal": true,
+        "output_types": [
+          "reasoning",
+          "function_call"
+        ]
+      },
+      {
+        "sequence": 13,
+        "status": 200,
+        "backend": "loopback",
+        "wire_api": "responses",
+        "complete": true,
+        "elapsed_ms": 51258.8,
+        "request_sha256": "51ef39580b54dde5355234a8a8177eb42a3d5e633747e5129d5aa860fff59b84",
+        "response_sha256": "6b706ee04f93d84b2f97b921655105dfc9606f66b43251fdf85ffe5ea2f07906",
+        "events": 481,
+        "terminal_event": "response.completed",
+        "sequence_contiguous": true,
+        "deltas_match_terminal": true,
+        "output_types": [
+          "reasoning",
+          "message",
+          "function_call"
+        ]
+      },
+      {
+        "sequence": 14,
+        "status": 200,
+        "backend": "loopback",
+        "wire_api": "responses",
+        "complete": true,
+        "elapsed_ms": 46077.4,
+        "request_sha256": "ba6078db43c670b773efeee1ee4a8f6f6fa8eaa909eb57ad9228600b5877ee43",
+        "response_sha256": "8995eb01bc0906ef7c99d450864e3dbabc03e5f1682efb4eec5f4c93badaba04",
+        "events": 557,
+        "terminal_event": "response.completed",
+        "sequence_contiguous": true,
+        "deltas_match_terminal": true,
+        "output_types": [
+          "reasoning",
+          "message"
+        ]
+      }
+    ]
+  },
+  "direct": {
+    "codex_exit": "timeout",
+    "time_limit_seconds": 600,
+    "turn_completed": false,
+    "completed_tool_commands": 6,
+    "source_changed": false,
+    "tests_unchanged": true,
+    "local_issue_checks_passed": false,
+    "issue_checks": {
+      "passed": false,
+      "exit_code": 1,
+      "dotted_names_rejected": {
+        "parent.child": false,
+        ".leading": false,
+        "trailing.": false,
+        "two..dots": false,
+        "myapp.frontend": false,
+        "myapp.backend": false
+      },
+      "ordinary_names_work": true,
+      "nested_blueprints_work": true
+    },
+    "original_blueprint_tests": {
+      "exit_code": 0,
+      "total": 49,
+      "passed": 49,
+      "failures": [],
+      "errors": [],
+      "skipped": []
+    },
+    "raw_http_capture_available": false
+  },
+  "verification": "archived_sessions_offline_recheck"
+}

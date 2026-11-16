@@ -1,0 +1,37 @@
+{
+  "verification_date": "2026-11-16",
+  "package_version": "0.1.0",
+  "python_version": "3.14.6",
+  "codex_version": "0.169.0-alpha.11.1",
+  "tests_collected": 25,
+  "pure_logic_tests_passed": 5,
+  "full_suite_closeout_status": "passed_user_confirmed",
+  "environment_errors": [
+    "Nested macOS sandbox: sandbox-exec sandbox_apply Operation not permitted",
+    "Loopback mock server: socket.bind PermissionError Operation not permitted"
+  ],
+  "earlier_full_suite_report": {
+    "passed": 25,
+    "source": "phase6_results.md"
+  },
+  "wheel_build_and_local_install": "passed",
+  "editable_build_and_local_install": "passed",
+  "installation_mode": "offline, existing pinned dependencies, local setuptools 84.2.1",
+  "openai_archive_metrics_recomputed": true,
+  "openai_checkout_regrade": {
+    "before_passed": 4,
+    "after_passed": 7,
+    "total_tests": 7
+  },
+  "dependent_tool_loop_rechecked": true,
+  "flask_comparison_rechecked": true,
+  "full_suite_terminal_command": "python -m pytest -q",
+  "installed_public_api_import": "passed",
+  "implementation_and_tests_match_previous_submission": true,
+  "restricted_environment_check_status": "blocked_by_execution_environment",
+  "full_suite_confirmation": {
+    "status": "passed",
+    "source": "user confirmation after the terminal full-suite command",
+    "date": "2026-11-16"
+  }
+}

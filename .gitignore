@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.egg-info/
+
+# Local environment and credentials
+.env
+.env.*
+.DS_Store
+
+# Private experiment outputs
+phase5_runs/
+phase6_runs/
+phase7_demo_proxy/
+phase7_demo_proxy_*/
+runs/
+logs/
+
+# Raw HTTP session recordings
+*.jsonl

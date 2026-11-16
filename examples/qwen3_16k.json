@@ -1,0 +1,10 @@
+{
+  "base_url": "http://127.0.0.1:11434/v1",
+  "wire_api": "responses",
+  "listen_host": "127.0.0.1",
+  "listen_port": 0,
+  "log_dir": "logs",
+  "seed": 42,
+  "model": "qwen3-codex-16k:8b",
+  "context_window": 16384
+}
